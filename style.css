@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
     padding: 70px 70px 24px 70px;
     background-color: rgb(255, 234, 47);
     color: #8e4106;
@@ -23,11 +23,62 @@ body{
     font-size: 32px;
     font-weight: 300px;
 }
-
 main{
-    background-color: rgb(192, 99, 169);
-    height: 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+}
+.title__text{
+    font-size: 20vw;
+    color: white;
+}
+.title__tranparent{
+    font-size: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: #fff5;
+    z-index: -1
+
+}
+.description{
+    place-self: end start;
+
+}
+.description__title{
+    font-size: 64px;
+}
+.description__text{
+    font-size: 20px;
+    width: 500px;
+}
+.action{
+    place-self: end;
+    background-color: #8e4106;
+    width: 400px;
+    height: 100px;
+    color: #fff;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 footer{
-    background-color: rgb(79, 196, 132);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pikachu-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
