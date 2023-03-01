@@ -7,14 +7,23 @@
 body{
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    padding: 70px 70px 70px 24px;
-    background-color: #f5cf06;
+    grid-template-rows: 100px 100px 1fr 100px;
+    padding: 70px 70px 24px 70px;
+    background-color: rgb(255, 234, 47);
+    color: #8e4106;
+    font-family: 'Righteous' , cursive;
 }
 
-header{
-    background-color: rgb(98, 157, 180);
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 24px
 }
+.logo__text{
+    font-size: 32px;
+    font-weight: 300px;
+}
+
 main{
     background-color: rgb(192, 99, 169);
     height: 
